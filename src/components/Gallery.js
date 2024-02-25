@@ -63,7 +63,7 @@ function Gallery(props) {
                                     exit={{ opacity: 0, scale: 0 }}
                                     transition={{ duration: 0.5, delay: index * 0.2 }}
                                 >
-                                    <Box sx={{ height: '40vh', minWidth: '300px', backgroundColor: 'red' }}>
+                                    <Box sx={{ height: '40vh', minWidth: '300px', backgroundColor: 'transparent' }}>
                                         <img src={item} style={{ width: '100%', height: '100%', resize: 'cover' }}  alt={index}/>
                                     </Box>
                                 </motion.div>

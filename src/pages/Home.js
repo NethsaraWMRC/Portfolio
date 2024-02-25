@@ -125,7 +125,7 @@ function Home() {
               <Box sx={{width:'100%', height:'100%', '&:hover': { opacity: 0.6 }, transition:'opacity 0.25s',}}>
 
                 <Typography sx={{ fontSize: '18px', fontWeight: '600' }}>Programming skill</Typography>
-                <Typography sx={{ fontSize: '16px' }}>JavaScript<br />React<br/>React Native<br />Java </Typography>
+                <Typography sx={{ fontSize: '16px' }}>React<br/>React Native<br />Java </Typography>
               </Box>
           </motion.Box>
           

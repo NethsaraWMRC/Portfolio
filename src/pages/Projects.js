@@ -13,9 +13,9 @@ const backImg3 = require('../assests/expense.jpg')
 const backImg4 = require('../assests/table.jpg')
 
 const video1 = require('../assests/videos/project1.mp4')
-const video2 = require('../assests/videos/project1.mp4')
-const video3 = require('../assests/videos/project1.mp4')
-const video4 = require('../assests/videos/project1.mp4')
+const video2 = require('../assests/videos/project4.mp4')
+const video3 = require('../assests/videos/project2.mp4')
+const video4 = require('../assests/videos/project3.mp4')
 
 const data = [
     {
@@ -42,7 +42,7 @@ const data = [
     {
         subHead:'Editable table',
         head:'Table Component',
-        description:"Built using the MERN (MongoDB, Express.js, React.js, Node.js) stack, this project is a user-friendly platform for uploading, organizing, and sharing photos.Users can register, log in, and upload images to their accounts. The platform allows for easy management of uploaded images and offers basic account functionalities. Additionally, visitors can browse and view all images on the platform through simple search and browsing features. Future improvements aim to enhance performance and user experience.",
+        description:"This React-based table component offers seamless inline editing functionality, allowing users to modify table cells directly without the need for additional pop-up windows. Users can easily search within the table to locate specific data entries. The component's versatility shines through its customizable dropdown menus within table cells, offering flexibility to tailor options for different columns and functions. With its highly customizable nature, this table component serves as a dynamic solution for displaying and manipulating tabular data in web applications.",
         backImg:backImg4,
         pVideo:video4,
     },
