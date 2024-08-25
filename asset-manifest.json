@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/CodeAlpha_Personal_Portfolio_Website/static/css/main.208fad24.css",
+    "main.js": "/CodeAlpha_Personal_Portfolio_Website/static/js/main.12bd2994.js",
+    "static/media/project1.mp4": "/CodeAlpha_Personal_Portfolio_Website/static/media/project1.15513b6a44912d2575b5.mp4",
+    "static/media/expense.jpg": "/CodeAlpha_Personal_Portfolio_Website/static/media/expense.f026a5c424de7be41c9e.jpg",
+    "static/media/2.jpg": "/CodeAlpha_Personal_Portfolio_Website/static/media/2.afa46fba750f5dc8f6c7.jpg",
+    "static/media/table.jpg": "/CodeAlpha_Personal_Portfolio_Website/static/media/table.3b21ec52959d8fee73fe.jpg",
+    "static/media/galle.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/galle.7190942384b85f16e440.jpeg",
+    "static/media/web.jpg": "/CodeAlpha_Personal_Portfolio_Website/static/media/web.180bead212f8148e275b.jpg",
+    "static/media/cp1.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/cp1.4ad96575cec663e0797a.jpeg",
+    "static/media/app.jpg": "/CodeAlpha_Personal_Portfolio_Website/static/media/app.ea3fd54ebe56df6d7802.jpg",
+    "static/media/fit2.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/fit2.3f515aa249a59e0f3ca3.jpeg",
+    "static/media/h1.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/h1.9c286c56003c093b1179.jpeg",
+    "static/media/fit3.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/fit3.af7a0122b1469739e4c8.jpeg",
+    "static/media/fit1.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/fit1.e44e614d08d5f3e59320.jpeg",
+    "static/media/back.jfif": "/CodeAlpha_Personal_Portfolio_Website/static/media/back.8e226afa95a257dfffc3.jfif",
+    "static/media/lib.jfif": "/CodeAlpha_Personal_Portfolio_Website/static/media/lib.14744ca3138c3394fe1e.jfif",
+    "static/media/masks.jfif": "/CodeAlpha_Personal_Portfolio_Website/static/media/masks.9d67cc42160c1ae304ad.jfif",
+    "static/media/hw2.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/hw2.e7d69298e985d24fd98c.jpeg",
+    "static/media/cp3.jpg": "/CodeAlpha_Personal_Portfolio_Website/static/media/cp3.b3bf921af980bad55dc1.jpg",
+    "static/media/hw3.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/hw3.373ec62ea5eb9273f754.jpeg",
+    "static/media/proPic.jpg": "/CodeAlpha_Personal_Portfolio_Website/static/media/proPic.556fba1042f5ebba795a.jpg",
+    "static/media/paint.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/paint.8a10bf0ce7521c16c53e.jpeg",
+    "static/media/ath3.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/ath3.e7fe40e2708ac484a927.jpeg",
+    "static/media/ath1.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/ath1.7a09b32d3aba44397129.jpeg",
+    "static/media/cp2.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/cp2.3e1c1c558a5e04d418b5.jpeg",
+    "static/media/ath2.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/ath2.e23b75f8ed55aae0051d.jpeg",
+    "static/media/pre.jpeg": "/CodeAlpha_Personal_Portfolio_Website/static/media/pre.a903f7d7d424a030ce83.jpeg",
+    "index.html": "/CodeAlpha_Personal_Portfolio_Website/index.html",
+    "main.208fad24.css.map": "/CodeAlpha_Personal_Portfolio_Website/static/css/main.208fad24.css.map",
+    "main.12bd2994.js.map": "/CodeAlpha_Personal_Portfolio_Website/static/js/main.12bd2994.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.208fad24.css",
+    "static/js/main.12bd2994.js"
+  ]
+}
