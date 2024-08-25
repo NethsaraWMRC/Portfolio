@@ -11,6 +11,7 @@ const backImg2 = require("../assests/web.jpg");
 const backImg3 = require("../assests/expense.jpg");
 const backImg4 = require("../assests/table.jpg");
 const backImg5 = require("../assests/lib.jfif");
+const backImg6 = require("../assests/masks.jfif");
 
 const video1 = require("../assests/videos/project1.mp4");
 
@@ -55,6 +56,15 @@ const data = [
       "Immerse yourself in a magical world with my 3D scene created using Three.js. This project brings a wizard’s library with featuring interactive elements such as enchanted books, a mystical hat, and a wand. Each object reveals unique aspects of wizardry, including house assignments, spell details, and hidden secrets of the magical realm. The captivating background, smooth animations, and thematic typography work together to enhance the enchanting atmosphere, inviting users to explore and experience the world of magic in an engaging and interactive way.",
     backImg: backImg5,
     pVideo: "https://www.youtube.com/embed/Cl7iD__DBC4?si=pd66KgsGrT-YvS_Q",
+  },
+
+  {
+    subHead: "Innovative Eco-Friendly Recycling Solution",
+    head: "Automated Face Masks Recycling Machine",
+    description:
+      "Developed an innovative automated system designed to recycle face masks, transforming waste materials into reusable plastic. The project emphasized sustainability and environmental impact, showcasing the ability to efficiently convert discarded masks into a valuable resource. This machine not only addressed waste management but also contributed to eco-friendly practices, receiving positive recognition from both academic professionals and industry peers. You can find the project proposal video below.",
+    backImg: backImg6,
+    pVideo: "https://www.youtube.com/embed/hPacpYlYJw8?si=ITXD7n1zTtdr3YAx",
   },
 ];
 
@@ -204,6 +214,15 @@ function Projects() {
             id={setCardId}
             clickedCard={cardId}
           />
+
+          <SlideCard
+            head={"Automated Face Masks Recycling Machine"}
+            bottom={"(Done as a first year hardware project)"}
+            passId={5}
+            id={setCardId}
+            clickedCard={cardId}
+          />
+
           <SlideCard
             head={"Qpics Photo Gallery"}
             sub={"Photo uploading platform"}
