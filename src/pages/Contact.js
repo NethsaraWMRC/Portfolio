@@ -38,8 +38,6 @@ function Home() {
   }, [forceRender]);
 
   const sendEmail = (e) => {
-    e.preventDefault();
-
     // console.log(name, email, message);
 
     emailjs
@@ -57,12 +55,17 @@ function Home() {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          alert("Your message has been sent successfully!");
         },
         (error) => {
+          alert("Failed to send your message. Please try again.");
           console.log("FAILED...", error.text);
         }
       );
+
+    setEmail("");
+    setName("");
+    setMessage("");
   };
 
   return (
@@ -97,6 +100,7 @@ function Home() {
             First Name
           </Typography>
           <input
+            value={name}
             style={{
               backgroundColor: "transparent",
               color: "rgba(255,255,255,0.7)",
@@ -117,6 +121,7 @@ function Home() {
             Email
           </Typography>
           <input
+            value={email}
             style={{
               backgroundColor: "transparent",
               color: "rgba(255,255,255,0.7)",
@@ -139,6 +144,7 @@ function Home() {
             Write to me
           </Typography>
           <textarea
+            value={message}
             style={{
               backgroundColor: "transparent",
               color: "rgba(255,255,255,0.7)",

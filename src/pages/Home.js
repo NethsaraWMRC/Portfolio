@@ -143,173 +143,172 @@ function Home() {
         rightSectionVisible={rightSectionVisible}
       />
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, width: 0 }}
         animate={{
           opacity: rightSectionVisible ? 1 : 0,
           width: rightSectionVisible ? "100%" : 0,
         }}
         transition={{ duration: 0.5, ease: "easeIn" }}
+      > */}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+
+          color: "white",
+          height: "100vh",
+        }}
       >
         <Box
+          ref={sectionRef}
           sx={{
+            visibility: {
+              xs: rightSectionVisible ? "visible" : "hidden",
+              lg: "visible",
+            },
             display: "flex",
             flexDirection: "column",
-            width: "100%",
-
-            color: "white",
-            height: "100vh",
+            position: "absolute",
+            minHeight: "100%",
+            backgroundColor: {
+              xs: "rgba(10,10,10,1)",
+              md: "rgba(100,100,100,0.4)",
+            },
+            width: { xs: "50%", sm: "30%", md: "30%", lg: "45vh" },
+            padding: "0 50px 0 30px",
+            right: { xs: "0%", lg: "5%" },
+            alignItems: "center",
           }}
         >
-          <Box
-            ref={sectionRef}
-            sx={{
-              visibility: {
-                xs: rightSectionVisible ? "visible" : "hidden",
-                lg: "visible",
-              },
-              display: "flex",
-              flexDirection: "column",
-              position: "absolute",
-              minHeight: "100%",
-              backgroundColor: {
-                xs: "rgba(10,10,10,1)",
-                md: "rgba(100,100,100,0.4)",
-              },
-              width: { xs: "50%", sm: "30%", md: "30%", lg: "45vh" },
-              padding: "0 50px 0 30px",
-              right: { xs: "0%", lg: "5%" },
-              alignItems: "center",
+          <motion.Box
+            style={{
+              width: "100%",
+              marginTop: "30px",
+              borderRadius: "10px",
+              overflow: "hidden",
             }}
+            initial={{ opacity: 0, transform: "scale(1.5)" }}
+            animate={{ opacity: 1, transform: "scale(1)" }}
+            transition={{ duration: 0.5, ease: "easeIn", delay: 1 }}
           >
-            <motion.Box
-              style={{
+            <Box
+              sx={{
                 width: "100%",
-                marginTop: "30px",
-                borderRadius: "10px",
-                overflow: "hidden",
+                height: { xs: "22vh", md: "40vh" },
+                "&:hover": { transform: "scale(1.2)" },
+                transition: "transform 0.25s",
               }}
-              initial={{ opacity: 0, transform: "scale(1.5)" }}
-              animate={{ opacity: 1, transform: "scale(1)" }}
-              transition={{ duration: 0.5, ease: "easeIn", delay: 1 }}
             >
-              <Box
-                sx={{
-                  width: "100%",
-                  height: { xs: "22vh", md: "40vh" },
-                  "&:hover": { transform: "scale(1.2)" },
-                  transition: "transform 0.25s",
-                }}
-              >
-                <img
-                  src={require("../assests/proPic.jpg")}
-                  style={{ height: "100%", width: "100%", objectFit: "cover" }}
-                  alt="profile"
-                />
-              </Box>
-            </motion.Box>
+              <img
+                src={require("../assests/proPic.jpg")}
+                style={{ height: "100%", width: "100%", objectFit: "cover" }}
+                alt="profile"
+              />
+            </Box>
+          </motion.Box>
 
-            <motion.Box
-              style={{
-                backgroundColor: "rgba(255,255,255,0.1)",
-                marginTop: "15px",
-                padding: "15px",
-                borderRadius: "15px",
+          <motion.Box
+            style={{
+              backgroundColor: "rgba(255,255,255,0.1)",
+              marginTop: "15px",
+              padding: "15px",
+              borderRadius: "15px",
+              width: "100%",
+            }}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeIn", delay: 1.4 }}
+          >
+            <Box
+              sx={{
                 width: "100%",
-              }}
-              initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, ease: "easeIn", delay: 1.4 }}
-            >
-              <Box
-                sx={{
-                  width: "100%",
-                  height: "100%",
-                  "&:hover": { opacity: 0.6 },
-                  transition: "opacity 0.25s",
-                }}
-              >
-                <Typography sx={{ fontSize: "18px", fontWeight: "600" }}>
-                  Programming skill
-                </Typography>
-                <Typography sx={{ fontSize: "14px" }}>
-                  React
-                  <br />
-                  React Native
-                  <br />
-                  Java <br />C Programming
-                </Typography>
-              </Box>
-            </motion.Box>
-
-            <motion.Box
-              style={{
-                backgroundColor: "rgba(255,255,255,0.1)",
-                marginTop: "15px",
-                padding: "15px",
-                borderRadius: "15px",
-                "&:hover": { opacity: 0.8 },
+                height: "100%",
+                "&:hover": { opacity: 0.6 },
                 transition: "opacity 0.25s",
-                width: "100%",
               }}
-              initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, ease: "easeIn", delay: 1.6 }}
             >
-              <Box
-                sx={{
-                  width: "100%",
-                  height: "100%",
-                  "&:hover": { opacity: 0.6 },
-                  transition: "opacity 0.25s",
-                }}
-              >
-                <Typography sx={{ fontSize: "18px", fontWeight: "600" }}>
-                  An Athlete
-                </Typography>
-                <Typography sx={{ fontSize: "14px" }}>
-                  Dedicated to rigorous training and achieving peak performance
-                  levels in sprinting. Skilled in various sports with discipline
-                  in training and performance.{" "}
-                </Typography>
-              </Box>
-            </motion.Box>
+              <Typography sx={{ fontSize: "18px", fontWeight: "600" }}>
+                Programming skill
+              </Typography>
+              <Typography sx={{ fontSize: "14px" }}>
+                React
+                <br />
+                React Native
+                <br />
+                Java <br />C Programming
+              </Typography>
+            </Box>
+          </motion.Box>
 
-            <motion.Box
-              style={{
-                backgroundColor: "rgba(255,255,255,0.1)",
-                marginTop: "15px",
-                marginBottom: "20px",
-                padding: "15px",
-                borderRadius: "15px",
-                "&:hover": { opacity: 0.8 },
-                transition: "opacity 0.25s",
+          <motion.Box
+            style={{
+              backgroundColor: "rgba(255,255,255,0.1)",
+              marginTop: "15px",
+              padding: "15px",
+              borderRadius: "15px",
+              "&:hover": { opacity: 0.8 },
+              transition: "opacity 0.25s",
+              width: "100%",
+            }}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeIn", delay: 1.6 }}
+          >
+            <Box
+              sx={{
                 width: "100%",
+                height: "100%",
+                "&:hover": { opacity: 0.6 },
+                transition: "opacity 0.25s",
               }}
-              initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, ease: "easeIn", delay: 1.8 }}
             >
-              <Box
-                sx={{
-                  width: "100%",
-                  height: "100%",
-                  "&:hover": { opacity: 0.6 },
-                  transition: "opacity 0.25s",
-                }}
-              >
-                <Typography sx={{ fontSize: "18px", fontWeight: "600" }}>
-                  Artistic Talents
-                </Typography>
-                <Typography sx={{ fontSize: "14px" }}>
-                  Proficient in creating captivating wall paintings, blending
-                  colors and concepts to produce visually appealing artwork.
-                </Typography>
-              </Box>
-            </motion.Box>
-          </Box>
+              <Typography sx={{ fontSize: "18px", fontWeight: "600" }}>
+                An Athlete
+              </Typography>
+              <Typography sx={{ fontSize: "14px" }}>
+                Dedicated to rigorous training and achieving peak performance
+                levels in sprinting. Skilled in various sports with discipline
+                in training and performance.{" "}
+              </Typography>
+            </Box>
+          </motion.Box>
+
+          <motion.Box
+            style={{
+              backgroundColor: "rgba(255,255,255,0.1)",
+              marginTop: "15px",
+              marginBottom: "20px",
+              padding: "15px",
+              borderRadius: "15px",
+              "&:hover": { opacity: 0.8 },
+              transition: "opacity 0.25s",
+              width: "100%",
+            }}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeIn", delay: 1.8 }}
+          >
+            <Box
+              sx={{
+                width: "100%",
+                height: "100%",
+                "&:hover": { opacity: 0.6 },
+                transition: "opacity 0.25s",
+              }}
+            >
+              <Typography sx={{ fontSize: "18px", fontWeight: "600" }}>
+                Artistic Talents
+              </Typography>
+              <Typography sx={{ fontSize: "14px" }}>
+                Proficient in creating captivating wall paintings, blending
+                colors and concepts to produce visually appealing artwork.
+              </Typography>
+            </Box>
+          </motion.Box>
         </Box>
-      </motion.div>
+      </Box>
 
       {galleryVisible && <Gallery onClose={setGalleryVisible} />}
     </motion.Box>

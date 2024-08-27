@@ -4,6 +4,7 @@ import React from "react";
 function SlideCard(props) {
   const handleClick = () => {
     props.id(props.passId);
+    props.visibility(false);
   };
 
   return (

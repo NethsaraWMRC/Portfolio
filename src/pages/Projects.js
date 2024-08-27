@@ -5,6 +5,7 @@ import Navigation from "../components/Navigation";
 import SlideCard from "../components/SlideCard";
 import { motion } from "framer-motion";
 import VideoPlayer from "../components/VideoPlayer";
+import SideBar from "../components/SideBar";
 
 const backImg1 = require("../assests/app.jpg");
 const backImg2 = require("../assests/web.jpg");
@@ -74,6 +75,7 @@ function Projects() {
   const [forceRender, setForceRender] = useState(false);
   const [cardId, setCardId] = useState(0);
   const [showVideoPlayer, setShowVideoPlayer] = useState(false);
+  const [rightSectionVisible, setRightSectionVisible] = useState(false);
 
   useEffect(() => {
     const calculateInitialHeight = () => {
@@ -201,6 +203,11 @@ function Projects() {
         </div>
       </Box>
 
+      <SideBar
+        visibility={setRightSectionVisible}
+        rightSectionVisible={rightSectionVisible}
+      />
+
       <Box
         sx={{
           display: "flex",
@@ -212,18 +219,24 @@ function Projects() {
         <Box
           ref={sectionRef}
           sx={{
-            visibility: { xs: "hidden", md: "visible" },
+            visibility: {
+              xs: rightSectionVisible ? "visible" : "hidden",
+              lg: "visible",
+            },
             display: "flex",
             flexDirection: "column",
             position: "absolute",
             minHeight: "100%",
             maxHeight: "100%",
-            backgroundColor: "rgba(150,150,150,0.6)",
-            width: { md: "15vh", lg: "45vh" },
-            padding: "0 30px",
+            backgroundColor: {
+              xs: "rgba(100,100,100,1)",
+              md: "rgba(100,100,100,0.6)",
+            },
+            width: { xs: "85%", sm: "25vh", md: "30vh", lg: "45vh" },
+            padding: "0 50px 0 30px",
             gap: "30px",
             overflowY: "scroll",
-            right: "5%",
+            right: { xs: "0%", lg: "5%" },
             "&::-webkit-scrollbar": {
               width: "0",
             },
@@ -236,6 +249,7 @@ function Projects() {
             passId={0}
             id={setCardId}
             clickedCard={cardId}
+            visibility={setRightSectionVisible}
           />
 
           <SlideCard
@@ -244,6 +258,7 @@ function Projects() {
             passId={5}
             id={setCardId}
             clickedCard={cardId}
+            visibility={setRightSectionVisible}
           />
 
           <SlideCard
@@ -253,6 +268,7 @@ function Projects() {
             passId={1}
             id={setCardId}
             clickedCard={cardId}
+            visibility={setRightSectionVisible}
           />
           <SlideCard
             head={"Expense Tracker Mini"}
@@ -261,6 +277,7 @@ function Projects() {
             passId={2}
             id={setCardId}
             clickedCard={cardId}
+            visibility={setRightSectionVisible}
           />
           <SlideCard
             head={"Table Component"}
@@ -269,6 +286,7 @@ function Projects() {
             passId={3}
             id={setCardId}
             clickedCard={cardId}
+            visibility={setRightSectionVisible}
           />
 
           <SlideCard
@@ -279,6 +297,7 @@ function Projects() {
             marginBottom={"30px"}
             id={setCardId}
             clickedCard={cardId}
+            visibility={setRightSectionVisible}
           />
         </Box>
       </Box>
