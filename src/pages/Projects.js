@@ -121,6 +121,7 @@ function Projects() {
           color: "white",
           fontFamily: "poppins",
           height: "100vh",
+
           marginLeft: "30px",
           overflowY: "scroll",
           scrollbarWidth: "none",
@@ -130,32 +131,53 @@ function Projects() {
           },
         }}
       >
-        <motion.Typography
-          style={{ fontSize: "28px", marginTop: "110px" }}
+        <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeIn", delay: 0.5 }}
         >
-          {data[cardId].subHead}
-        </motion.Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: "22px", lg: "28px" },
+              marginTop: "110px",
+            }}
+          >
+            {data[cardId].subHead}
+          </Typography>
+        </motion.div>
 
-        <motion.Typography
-          style={{ fontSize: "60px", fontWeight: "700" }}
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeIn", delay: 0.55 }}
         >
-          {data[cardId].head}
-        </motion.Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: "50px", lg: "60px" },
+              fontWeight: "700",
+              width: "100%",
+            }}
+          >
+            {data[cardId].head}
+          </Typography>
+        </motion.div>
 
-        <motion.Typography
-          style={{ fontSize: "16px", maxWidth: "700px", marginTop: "10px" }}
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeIn", delay: 0.7 }}
         >
-          {data[cardId].description}
-        </motion.Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: "14px", lg: "16px" },
+              maxWidth: "700px",
+              marginTop: "10px",
+            }}
+          >
+            {data[cardId].description}
+          </Typography>
+        </motion.div>
+
         <div
           style={{
             display: "flex",
@@ -190,13 +212,14 @@ function Projects() {
         <Box
           ref={sectionRef}
           sx={{
+            visibility: { xs: "hidden", md: "visible" },
             display: "flex",
             flexDirection: "column",
             position: "absolute",
             minHeight: "100%",
             maxHeight: "100%",
             backgroundColor: "rgba(150,150,150,0.6)",
-            width: "45vh",
+            width: { md: "15vh", lg: "45vh" },
             padding: "0 30px",
             gap: "30px",
             overflowY: "scroll",

@@ -209,13 +209,14 @@ function Home() {
         <Box
           ref={sectionRef}
           sx={{
+            visibility: { xs: "hidden", md: "visible" },
             display: "flex",
             flexDirection: "column",
             position: "absolute",
             minHeight: "100%",
             maxHeight: "100%",
             backgroundColor: "rgba(100,100,100,0.6)",
-            width: "45vh",
+            width: { md: "20vh", lg: "45vh" },
             padding: "0 30px",
             gap: "30px",
             justifyContent: "center",

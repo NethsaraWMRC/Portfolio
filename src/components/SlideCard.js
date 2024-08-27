@@ -23,7 +23,7 @@ function SlideCard(props) {
               : "rgba(0,0,0,0.6)",
           padding: "15px",
           borderRadius: "15px",
-          minHeight: "20vh",
+          minHeight: { xs: "10vh", lg: "20vh" },
           transition: "opacity 0.25s",
           boxShadow: "1px 5px 10px rgba(0,0,0,0.3)",
           marginTop: props.marginTop,
