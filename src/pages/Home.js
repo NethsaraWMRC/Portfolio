@@ -65,6 +65,7 @@ function Home() {
             sm: "visible",
           },
           width: "100%",
+          paddingTop: "110px",
         }}
       >
         <motion.div
@@ -75,7 +76,6 @@ function Home() {
           <Typography
             sx={{
               fontSize: { xs: "22px", md: "28px" },
-              marginTop: "110px",
             }}
           >
             Full Stack Developer

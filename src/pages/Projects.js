@@ -123,7 +123,7 @@ function Projects() {
           color: "white",
           fontFamily: "poppins",
           height: "100vh",
-
+          paddingTop: "110px",
           marginLeft: "30px",
           overflowY: "scroll",
           scrollbarWidth: "none",
@@ -141,7 +141,6 @@ function Projects() {
           <Typography
             sx={{
               fontSize: { xs: "20px", lg: "28px" },
-              marginTop: "110px",
             }}
           >
             {data[cardId].subHead}
@@ -213,7 +212,7 @@ function Projects() {
       <Box
         sx={{
           display: "flex",
-          width: "20%",
+          width: { xs: "0%", md: "20%" },
           justifyContent: "center",
           color: "white",
         }}
