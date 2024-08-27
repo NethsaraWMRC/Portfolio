@@ -211,7 +211,7 @@ function Projects() {
       <Box
         sx={{
           display: "flex",
-          width: "50%",
+          width: "20%",
           justifyContent: "center",
           color: "white",
         }}
