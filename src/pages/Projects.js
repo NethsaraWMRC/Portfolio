@@ -189,7 +189,7 @@ function Projects() {
             border: "2px solid white",
             borderRadius: "10px",
             marginTop: "40px",
-            marginBottom: "40px",
+
             width: "120px",
             padding: "8px 0",
             cursor: "pointer",
@@ -201,6 +201,8 @@ function Projects() {
         >
           <Typography>See more</Typography>
         </div>
+
+        <div style={{ padding: "20px", width: "40px" }}></div>
       </Box>
 
       <SideBar
