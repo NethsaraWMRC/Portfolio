@@ -89,10 +89,9 @@ function Home() {
           fontFamily: "poppins",
           height: "100%",
           marginLeft: "30px",
-          paddingTop: "110px",
         }}
       >
-        <Typography sx={{ fontSize: "28px" }}>
+        <Typography sx={{ fontSize: "28px", marginTop: { md: "110px" } }}>
           Contact me for any clarifications
         </Typography>
 

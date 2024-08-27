@@ -105,7 +105,7 @@ function Projects() {
 
   return (
     <motion.Box
-      style={{ display: "flex", gap: "50px" }}
+      style={{ display: "flex", gap: "50px", height: "100vh" }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeIn" }}
@@ -122,8 +122,7 @@ function Projects() {
           flexDirection: "column",
           color: "white",
           fontFamily: "poppins",
-          height: "100vh",
-          paddingTop: "110px",
+          height: "100%",
           marginLeft: "30px",
           overflowY: "scroll",
           scrollbarWidth: "none",
@@ -140,7 +139,8 @@ function Projects() {
         >
           <Typography
             sx={{
-              fontSize: { xs: "20px", lg: "28px" },
+              fontSize: { xs: "16px", lg: "28px" },
+              marginTop: { md: "110px" },
             }}
           >
             {data[cardId].subHead}
@@ -154,7 +154,7 @@ function Projects() {
         >
           <Typography
             sx={{
-              fontSize: { xs: "45px", lg: "60px" },
+              fontSize: { xs: "25px", lg: "60px" },
               fontWeight: "700",
               width: "100%",
             }}
