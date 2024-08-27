@@ -140,7 +140,7 @@ function Projects() {
         >
           <Typography
             sx={{
-              fontSize: { xs: "22px", lg: "28px" },
+              fontSize: { xs: "20px", lg: "28px" },
               marginTop: "110px",
             }}
           >
@@ -155,7 +155,7 @@ function Projects() {
         >
           <Typography
             sx={{
-              fontSize: { xs: "50px", lg: "60px" },
+              fontSize: { xs: "45px", lg: "60px" },
               fontWeight: "700",
               width: "100%",
             }}
@@ -171,7 +171,7 @@ function Projects() {
         >
           <Typography
             sx={{
-              fontSize: { xs: "14px", lg: "16px" },
+              fontSize: { xs: "13px", lg: "16px" },
               maxWidth: "700px",
               marginTop: "10px",
             }}
@@ -191,7 +191,7 @@ function Projects() {
             marginTop: "40px",
             marginBottom: "40px",
             width: "120px",
-            height: "45px",
+            padding: "8px 0",
             cursor: "pointer",
             transition: "opacity 0.25s",
             "&:hover": { opacity: 0.8 },
