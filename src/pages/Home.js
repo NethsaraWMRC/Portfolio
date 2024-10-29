@@ -143,14 +143,7 @@ function Home() {
         rightSectionVisible={rightSectionVisible}
       />
 
-      {/* <motion.div
-        initial={{ opacity: 0, width: 0 }}
-        animate={{
-          opacity: rightSectionVisible ? 1 : 0,
-          width: rightSectionVisible ? "100%" : 0,
-        }}
-        transition={{ duration: 0.5, ease: "easeIn" }}
-      > */}
+  
       <Box
         sx={{
           display: "flex",
